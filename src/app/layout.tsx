@@ -4,7 +4,11 @@ import Header from "@/components/Layout/Header";
 import Footer from "@/components/Layout/Footer";
 import { ThemeProvider } from "next-themes";
 import ScrollToTop from "@/components/ScrollToTop";
-const font = Poppins({ subsets: ["latin"], weight: ["400", "500", "600", "700"], });
+
+const font = Poppins({ subsets: ["latin"], weight: ["400", "500", "600", "700"] });
+
+
+
 
 export default function RootLayout({
   children,
@@ -13,12 +17,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${font.className}`}>
-        <ThemeProvider
-          attribute="class"
-          enableSystem={true}
-          defaultTheme="light"
-        >
+      <body className={font.className}>
+        <ThemeProvider attribute="class" enableSystem defaultTheme="light">
           <Header />
           {children}
           <Footer />

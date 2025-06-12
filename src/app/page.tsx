@@ -8,6 +8,9 @@ import Newsletter from "@/components/Home/Newsletter";
 import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Sincronix|E-Learning Platform",
+  icons: {
+    icon: "/favicon-32x32.png",
+  },
 };
 
 export default function Home() {
