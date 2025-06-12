@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  @apply py-20;
+}
+
+.slick-dots {
+  color: #bc5b1a;
+}
+
+.slick-dots li.slick-active button:before {
+  opacity: 1;
+  color: #bc4d1a !important;
+}
+
+.slick-dots li button:before {
+  font-size: 11px !important;
+}
